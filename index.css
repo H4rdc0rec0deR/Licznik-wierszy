@@ -1,0 +1,63 @@
+body {
+  background-image: url("yarn.jpg");
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  height: 100vh;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  max-width: 80%;
+  margin: auto;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+button {
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#increment-btn {
+  background: #4743ad;
+}
+
+#save-btn {
+  background: #207c4b;
+}
+
+#decrease-btn {
+  background: rgb(255, 183, 195);
+}
+
+#save-el {
+  font-weight: bold;
+}
+
+p {
+  font-weight: bold;
+}
+
+#reset-btn {
+  background: rgb(146, 95, 198);
+}
