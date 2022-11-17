@@ -1,18 +1,18 @@
 <html>
   <head>
     <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container">
-      <h1>Licznik Oczek</h1>
-      <h2 id="count-el">0</h2>
-      <button id="increment-btn" onclick="increment()">ZWIĘKSZ</button>
-      <button id="decrease-btn" onclick="decrease()">ZMNIEJSZ</button>
-      <button id="save-btn" onclick="save()">ZAPISZ</button>
-      <p>Poprzednie oczka:</p>
-      <p id="save-el"></p>
-      <button id="reset-btn" onclick="reset()">RESETUJ</button>
-    </div>
+    <h1>Emoji<br />Fighter</h1>
+    <div id="stage"></div>
+    <button id="fightButton">Pick Fighters!</button>
     <script src="index.js"></script>
   </body>
 </html>
+
