@@ -1,46 +1,28 @@
-let fighters = [
-  "🐉",
-  "🐥",
-  "🐊",
-  "💩",
-  "🦍",
-  "🐢",
-  "🐩",
-  "🐕",
-  "🦀",
-  "🐝",
-  "🤖",
-  "🐘",
-  "🐸",
-  "🕷",
-  "🐆",
-  "🦕",
-  "🦁",
-];
+let saveEl = document.getElementById("save-el");
+let countEl = document.getElementById("count-el");
+let count = 0;
 
-let stageEl = document.getElementById("stage");
-let fightButton = document.getElementById("fightButton");
+function increment() {
+  count += 1;
+  countEl.textContent = count;
+}
 
-fightButton.addEventListener("click", function () {
-  let randomIndexOne = Math.floor(Math.random() * fighters.length);
-  let randomIndexTwo = Math.floor(Math.random() * fighters.length);
-  if (randomIndexOne === randomIndexTwo && randomIndexOne === fighters.length) {
-    randomIndexOne -= 1;
-    randomIndexTwo -= 2;
-    stageEl.textContent =
-      fighters[randomIndexOne] + " vs " + fighters[randomIndexTwo];
-  } else if (randomIndexOne === randomIndexTwo && randomIndexOne === 0) {
-    randomIndexOne += 1;
-    randomIndexTwo += 2;
-    stageEl.textContent =
-      fighters[randomIndexOne] + " vs " + fighters[randomIndexTwo];
-  } else if (randomIndexOne === randomIndexTwo) {
-    randomIndexOne -= 1;
-    randomIndexTwo += 1;
-    stageEl.textContent =
-      fighters[randomIndexOne] + " vs " + fighters[randomIndexTwo];
-  } else {
-    stageEl.textContent =
-      fighters[randomIndexOne] + " vs " + fighters[randomIndexTwo];
-  }
-});
+function decrease() {
+  count -= 1;
+  countEl.textContent = count;
+}
+
+let countStr = count + " - ";
+
+function save() {
+  let countStr = count + " - ";
+  saveEl.textContent += countStr;
+  countEl.textContent = 0;
+  count = 0;
+}
+
+function reset() {
+  saveEl.textContent = "";
+  countEl.textContent = 0;
+  count = 0;
+}
