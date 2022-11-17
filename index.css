@@ -1,35 +1,63 @@
 body {
-  margin: 0;
-  padding: 0;
+  background-image: url("yarn.jpg");
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
   text-align: center;
-  font-family: "Permanent Marker", cursive;
-  /* background: linear-gradient(white, gray); */
   height: 100vh;
-  color: #e98a1d;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  max-width: 80%;
+  margin: auto;
+  border: 3px solid black;
+  border-radius: 10px;
 }
 
 h1 {
-  text-shadow: 0px 3px 0px black;
-  line-height: 24px;
-  transform: rotate(-9deg);
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-#stage {
-  width: 100%;
-  height: 60px;
-  padding: 30px 0;
+h2 {
   font-size: 50px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 button {
-  margin: 20px;
-  cursor: pointer;
-  border: 0;
-  padding: 8px 16px;
-  border-radius: 10px;
-  background: #e98a1d;
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: white;
-  font-family: inherit;
-  font-size: 20px;
+  font-weight: bold;
+  width: 200px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#increment-btn {
+  background: #4743ad;
+}
+
+#save-btn {
+  background: #207c4b;
+}
+
+#decrease-btn {
+  background: rgb(255, 183, 195);
+}
+
+#save-el {
+  font-weight: bold;
+}
+
+p {
+  font-weight: bold;
+}
+
+#reset-btn {
+  background: rgb(146, 95, 198);
 }
